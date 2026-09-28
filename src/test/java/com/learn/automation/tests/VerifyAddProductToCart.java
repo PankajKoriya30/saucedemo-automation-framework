@@ -31,11 +31,11 @@ public class VerifyAddProductToCart extends BaseTest{
                 "Cart page is not displayed");
 
         Assert.assertTrue(cartPage.getCartProductNames().contains(TestDataReader.getTestData("backpack")),
-                "Backpack is present on the cart page.");
+                "Backpack is not present on the cart page.");
         Assert.assertTrue(cartPage.getCartProductNames().contains(TestDataReader.getTestData("bikelight")),
-                "Bike light is present on the cart page.");
+                "Bike light is not present on the cart page.");
 
         Assert.assertEquals(cartPage.getCartProductNames().size(), 2,
-                "cart contains exactly 2 products");
+                "cart contains more than 2 products");
     }
 }
