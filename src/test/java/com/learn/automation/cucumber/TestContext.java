@@ -22,40 +22,40 @@ public class TestContext {
     }
     public LoginPage getLoginPage(){
         if(loginPage==null){
-            loginPage = new LoginPage(driver);
+            loginPage = new LoginPage(getDriver());
         }
         return loginPage;
     }
     public ProductsPage getProductsPage(){
         if(productsPage==null){
-            productsPage = new ProductsPage(driver);
+            productsPage = new ProductsPage(getDriver());
         }
         return productsPage;
     }
     public CartPage getCartPage(){
         if(cartPage==null){
-            cartPage = new CartPage(driver);
+            cartPage = new CartPage(getDriver());
         }
         return cartPage;
     }
 
     public CheckoutInfoPage getCheckoutInfoPage(){
         if(checkoutInfoPage==null){
-            checkoutInfoPage = new CheckoutInfoPage(driver);
+            checkoutInfoPage = new CheckoutInfoPage(getDriver());
         }
         return checkoutInfoPage;
     }
 
     public CheckoutOverviewPage getCheckoutOverviewPage(){
         if(checkoutOverviewPage==null){
-            checkoutOverviewPage = new CheckoutOverviewPage(driver);
+            checkoutOverviewPage = new CheckoutOverviewPage(getDriver());
         }
         return checkoutOverviewPage;
     }
 
     public OrderConfirmationPage getOrderConfirmationPage(){
         if(orderConfirmationPage==null){
-            orderConfirmationPage = new OrderConfirmationPage(driver);
+            orderConfirmationPage = new OrderConfirmationPage(getDriver());
         }
         return orderConfirmationPage;
     }

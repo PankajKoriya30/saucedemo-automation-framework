@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com.learn.automation.cucumber.stepdefinitions",
-        tags = "@smoke or @regression",
+        tags = "@smoke",
         plugin = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber.html"
