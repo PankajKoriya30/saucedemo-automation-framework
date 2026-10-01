@@ -23,7 +23,7 @@ public class ScreenshotUtils {
             Files.copy(sourceFile.toPath(), destinationPath,
                     java.nio.file.StandardCopyOption.REPLACE_EXISTING);
 
-            return destinationPath.toString();
+            return "../../" + destinationPath.toString().replace("\\", "/");
         } catch (IOException e) {
             throw new RuntimeException("Failed to capture screenshot", e);
         }
