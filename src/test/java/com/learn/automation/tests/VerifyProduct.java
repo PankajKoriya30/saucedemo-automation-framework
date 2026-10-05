@@ -20,10 +20,8 @@ public class VerifyProduct extends BaseTest {
         String productsPageTitle = productsPage.getProductsPageTitle();
         Assert.assertEquals(productsPageTitle, "Products", "Products page " +
                 "title is not matching.");
-        System.out.println("Page title: " + productsPageTitle);
 
         String backpackName = productsPage.getBackpackName();
         Assert.assertEquals(backpackName, TestDataReader.getTestData("backpack"));
-        System.out.println("Page title: " + backpackName);
     }
 }

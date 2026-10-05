@@ -10,7 +10,7 @@ public class ExtentReportManager {
     public static synchronized ExtentReports getExtentReports(){
         if (extentReports==null){
             ExtentSparkReporter sparkReporter =
-                    new ExtentSparkReporter("target/extent-reports/extent-report.html");
+                    new ExtentSparkReporter(Constants.EXTENT_REPORT_PATH);
             sparkReporter.config().setDocumentTitle("SauceDemo Automation Report");
             sparkReporter.config().setReportName("SauceDemo Automation Execution Report");
             extentReports = new ExtentReports();

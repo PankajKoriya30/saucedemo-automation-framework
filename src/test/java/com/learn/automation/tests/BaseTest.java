@@ -20,11 +20,6 @@ public class BaseTest {
         TestDataReader.loadProperties("testdata");
         DriverFactory.createDriver(browser);
         driver = DriverFactory.getDriver();
-        System.out.println(
-                "Thread: " + Thread.currentThread().getId()
-                        + " | Browser: " + browser
-                        + " | Driver: " + driver
-        );
         driver.get(ConfigReader.getProperty("url"));
     }
 

@@ -6,7 +6,6 @@ import com.learn.automation.pages.ProductsPage;
 import com.learn.automation.utils.TestDataReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 public class VerifyRemoveProductFromCart extends BaseTest{

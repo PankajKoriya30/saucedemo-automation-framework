@@ -54,6 +54,7 @@ public class Hooks {
             byte[] screenshot = ((TakesScreenshot) testContext.getDriver())
                     .getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", screenshotName);
+
             extentTest.fail("Screnario Failed.", MediaEntityBuilder
                             .createScreenCaptureFromPath(screenshotPath)
                             .build());

@@ -2,14 +2,13 @@ package com.learn.automation.cucumber.stepdefinitions;
 
 import com.learn.automation.cucumber.TestContext;
 import com.learn.automation.utils.ConfigReader;
-import com.learn.automation.utils.ScreenshotUtils;
 import com.learn.automation.utils.TestDataReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 
 import java.io.IOException;
 
@@ -44,9 +43,5 @@ public class LoginSteps {
         Assert.assertTrue(testContext.getProductsPage().getProductsPageTitle().equalsIgnoreCase("Products"),
                 "Products page is not displayed after login");
         logger.info("Login success and navigated to products page");
-
-//        String screenshotPath = ScreenshotUtils.captureScreenshot(
-//                testContext.getDriver(), "login_Success");
-//        logger.info("Screenshot captured: {}", screenshotPath);
     }
 }

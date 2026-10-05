@@ -12,7 +12,7 @@
             </run>
         </groups>
         <packages>
-            <package name="com.learn.automation.driver.tests"/>
+            <package name="com.learn.automation.tests"/>
         </packages>
     </test>
 
@@ -24,7 +24,7 @@
             </run>
         </groups>
         <packages>
-            <package name="com.learn.automation.driver.tests"/>
+            <package name="com.learn.automation.tests"/>
         </packages>
     </test>
 
@@ -36,8 +36,7 @@
             </run>
         </groups>
         <packages>
-            <package name="com.learn.automation.driver.tests"/>
+            <package name="com.learn.automation.tests"/>
         </packages>
     </test>
-
 </suite>

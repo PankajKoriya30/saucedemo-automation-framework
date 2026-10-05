@@ -1,13 +1,12 @@
 package com.learn.automation.cucumber.stepdefinitions;
 
 import com.learn.automation.cucumber.TestContext;
-import com.learn.automation.driver.DriverFactory;
 import com.learn.automation.utils.TestDataReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.testng.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 
 public class CheckoutSteps {
 

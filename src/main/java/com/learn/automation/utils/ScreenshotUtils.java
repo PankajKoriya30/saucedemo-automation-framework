@@ -17,7 +17,7 @@ public class ScreenshotUtils {
         try {
             TakesScreenshot screenshot = (TakesScreenshot) driver;
             File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
-            Path screenshotDirectory = Paths.get("screenshots");
+            Path screenshotDirectory = Paths.get(Constants.SCREENSHOT_DIRECTORY);
             Files.createDirectories(screenshotDirectory);
             Path destinationPath = screenshotDirectory.resolve(screenshotName + ".png");
             Files.copy(sourceFile.toPath(), destinationPath,
