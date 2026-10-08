@@ -53,6 +53,6 @@ public class VerifyProductSorting extends BaseTest {
     public void verifyProductsPageTitle(){
         Assert.assertEquals(productsPage.getProductsPageTitle(),
                 "Products",
-                "Products page title is not matching.");
+                "Products page title is not matching");
     }
 }
