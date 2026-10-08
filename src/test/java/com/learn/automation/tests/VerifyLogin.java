@@ -19,10 +19,8 @@ public class VerifyLogin extends BaseTest{
 
             String productsPageTitle = productsPage.getProductsPageTitle();
             Assert.assertEquals(productsPageTitle, "Products");
-            System.out.println("Page title: " + productsPageTitle);
 
             String title = driver.getTitle();
             Assert.assertEquals(title, "Swag Labs");
-            System.out.println("Page title: " + title);
         }
 }

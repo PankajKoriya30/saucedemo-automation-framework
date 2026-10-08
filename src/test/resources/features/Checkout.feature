@@ -9,7 +9,7 @@ Feature: SauceDemo Checkout feature
     And user opens shopping cart
     Then backpack and bike light should be displayed in the cart page
 
-  @regression
+  @regression @smoke
   Scenario: Complete checkout successfully
     Given user is on the sauce demo login page
     When user enters valid credentials
