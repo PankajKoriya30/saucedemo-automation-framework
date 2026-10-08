@@ -1,6 +1,6 @@
 Feature: SauceDemo Checkout feature
 
-  @regression
+  @regression @smoke
   Scenario: Verify add products to cart
     Given user is on the sauce demo login page
     When user enters valid credentials
