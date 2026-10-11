@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Verify Java and Maven') {
+            steps {
+                bat 'java -version'
+                bat 'call mvn -version'
+            }
+        }
+
+        stage('Run Automation Tests') {
+            steps {
+                bat 'call mvn clean test'
+            }
+        }
+    }
+
+    post {
+        always {
+            junit(
+                testResults: 'target/surefire-reports/TEST-*.xml',
+                allowEmptyResults: true
+            )
+
+            archiveArtifacts(
+                artifacts: 'target/surefire-reports/**/*,screenshots/**/*',
+                allowEmptyArchive: true
+            )
+        }
+    }
+}
