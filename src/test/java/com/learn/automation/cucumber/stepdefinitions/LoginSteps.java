@@ -40,7 +40,7 @@ public class LoginSteps {
 
     @Then("products page should be displayed")
     public void productsPageShouldBeDisplayed() throws IOException {
-        Assert.assertTrue(testContext.getProductsPage().getProductsPageTitle().equalsIgnoreCase("Prod ucts"),
+        Assert.assertTrue(testContext.getProductsPage().getProductsPageTitle().equalsIgnoreCase("Products"),
                 "Products page is not displayed after login");
         logger.info("Login success and navigated to products page");
     }
