@@ -34,7 +34,7 @@ public class VerifyProductSorting extends BaseTest {
                 "Products are not sorted Price Low To High.");
     }
 
-    @Test
+    @Test(groups = "regression")
     public void verifyProductSortingWithAllProducts() {
         String pageTitle = productsPage.getProductsPageTitle();
         Assert.assertEquals(pageTitle, "Products");
@@ -47,12 +47,5 @@ public class VerifyProductSorting extends BaseTest {
         List<Double> expectedSorting = new ArrayList<>(actualSorting);
         Collections.sort(expectedSorting);
         Assert.assertEquals(actualSorting, expectedSorting, "Products are not sorted Price Low To High.");
-    }
-
-    @Test
-    public void verifyProductsPageTitle(){
-        Assert.assertEquals(productsPage.getProductsPageTitle(),
-                "Products",
-                "Products page title is not matching");
     }
 }
